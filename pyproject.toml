@@ -1,0 +1,39 @@
+[project]
+name = "sightapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "guptasrijan85@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "cvzone>=2.0.0",
+    "fastapi>=0.162.0",
+    "mediapipe>=1.2.0",
+    "numpy>=2.5.4",
+    "opencv-python>=5.0.0.93",
+    "pillow>=13.0.0",
+    "python-multipart>=0.0.33",
+    "requests>=2.34.2",
+    "torch==2.11.0",
+    "torchvision==0.26.0",
+    "ultralytics>=8.4.200",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+sightapi = "sightapi:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }

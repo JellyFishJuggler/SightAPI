@@ -1,0 +1,61 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+wheels/
+*.egg-info
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging and tooling
+.uv/
+.tox/
+.nox/
+
+# Environment and secrets
+.env
+.env.*
+*.env
+!.env.example
+
+# IDE and editor files
+.idea/
+.vscode/
+*.code-workspace
+
+# Logs, temporary files, and local runtime output
+*.log
+*.pid
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Downloaded detector models and runtime assets
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.task
+
+# Captured images and videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+captures/
+recordings/
